@@ -72,7 +72,7 @@ export default function LandingPage() {
       ]}
       mediaItems={[
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/artist-front-blank-canvas_23-2147781648.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/artist-front-blank-canvas_23-2147781648.jpg?_wi=1",
           imageAlt: "Çerçeveleme atölyesi",
         },
         {
@@ -136,25 +136,25 @@ export default function LandingPage() {
           id: "p1",
           name: "Tuval Üretimi",
           price: "Teklif Al",
-          imageSrc: "http://img.b2bpic.net/free-photo/photo-frame_1203-3262.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/photo-frame_1203-3262.jpg?_wi=1",
         },
         {
           id: "p2",
           name: "Resim Çerçeveleme",
           price: "Teklif Al",
-          imageSrc: "http://img.b2bpic.net/free-photo/blank-frames-wall_23-2148875414.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/blank-frames-wall_23-2148875414.jpg?_wi=1",
         },
         {
           id: "p3",
           name: "Tuvale Baskı",
           price: "Teklif Al",
-          imageSrc: "http://img.b2bpic.net/free-photo/close-up-person-working-engraving_23-2149286577.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/close-up-person-working-engraving_23-2149286577.jpg?_wi=1",
         },
         {
           id: "p4",
           name: "Şövale Satışı",
           price: "Teklif Al",
-          imageSrc: "http://img.b2bpic.net/free-photo/art-concept-with-canvas-supplies_23-2148577653.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/art-concept-with-canvas-supplies_23-2148577653.jpg?_wi=1",
         },
         {
           id: "p5",
@@ -245,7 +245,7 @@ export default function LandingPage() {
           quote: "Çerçeveye de tuval üzerine yapılan siyah beyaz baskıya da bayıldım.",
           tag: "Sanatçı",
           avatarSrc: "http://img.b2bpic.net/free-photo/expressive-man-is-posing-studio_176474-59266.jpg",
-          imageSrc: "http://img.b2bpic.net/free-photo/artist-front-blank-canvas_23-2147781648.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/artist-front-blank-canvas_23-2147781648.jpg?_wi=2",
           imageAlt: "smiling customer artisan workshop",
         },
         {
@@ -256,7 +256,7 @@ export default function LandingPage() {
           quote: "Her ölçüde istediğiniz tuvali bulabileceğiniz, samimi bir işletme.",
           tag: "Müşteri",
           avatarSrc: "http://img.b2bpic.net/free-photo/artist-painting-studio_23-2148017592.jpg",
-          imageSrc: "http://img.b2bpic.net/free-photo/photo-frame_1203-3262.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/photo-frame_1203-3262.jpg?_wi=2",
           imageAlt: "smiling customer artisan workshop",
         },
         {
@@ -267,7 +267,7 @@ export default function LandingPage() {
           quote: "İlgisi, alakası ve güler yüze ek kalite de olunca başka ne ister ki insan.",
           tag: "Yerel Rehber",
           avatarSrc: "http://img.b2bpic.net/free-photo/young-female-artist-painting-easel-studio-art-concept-woman-draws_169016-66017.jpg",
-          imageSrc: "http://img.b2bpic.net/free-photo/blank-frames-wall_23-2148875414.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/blank-frames-wall_23-2148875414.jpg?_wi=2",
           imageAlt: "smiling customer artisan workshop",
         },
         {
@@ -278,7 +278,7 @@ export default function LandingPage() {
           quote: "İşçilikleri ve özenli çalışma prensiplerinden çok memnun kaldım.",
           tag: "Müşteri",
           avatarSrc: "http://img.b2bpic.net/free-photo/two-sister-showing-blank-slate-isolated-white-backdrop_23-2147890532.jpg",
-          imageSrc: "http://img.b2bpic.net/free-photo/close-up-person-working-engraving_23-2149286577.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/close-up-person-working-engraving_23-2149286577.jpg?_wi=2",
           imageAlt: "smiling customer artisan workshop",
         },
         {
@@ -289,7 +289,7 @@ export default function LandingPage() {
           quote: "Ankara'da en kaliteli ahşap çerçeveleri bulabileceğiniz adres.",
           tag: "Müşteri",
           avatarSrc: "http://img.b2bpic.net/free-photo/woman-showing-blond-female-coworker-paper-sheet_23-2148180677.jpg",
-          imageSrc: "http://img.b2bpic.net/free-photo/art-concept-with-canvas-supplies_23-2148577653.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/art-concept-with-canvas-supplies_23-2148577653.jpg?_wi=2",
           imageAlt: "smiling customer artisan workshop",
         },
       ]}
