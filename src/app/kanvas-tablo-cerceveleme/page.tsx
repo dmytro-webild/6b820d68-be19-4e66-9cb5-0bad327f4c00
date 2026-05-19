@@ -43,6 +43,7 @@ export default function CanvasFramingPage() {
             <HeroBillboardGallery
                 title="Modern Kanvas Tablo Çerçeveleme"
                 description="Sanat eserleriniz için Ankara'nın en modern ve dayanıklı çerçeveleme çözümleri. 50 yıllık tecrübeyle."
+                background={{ variant: "plain" }}
                 mediaItems={[
                     { imageSrc: "http://img.b2bpic.net/free-photo/photo-frame_1203-3262.jpg?_wi=1" },
                     { imageSrc: "http://img.b2bpic.net/free-photo/blank-frames-wall_23-2148875414.jpg?_wi=1" },
@@ -68,6 +69,7 @@ export default function CanvasFramingPage() {
         <div id="pricing" data-section="pricing">
             <PricingCardTwo
                 title="Çerçeveleme Hizmetleri"
+                description="Size en uygun çerçeveleme çözümlerini sunuyoruz."
                 plans={[
                     { id: "p1", badge: "Başlangıç", price: "Özel", subtitle: "Standart Çözümler", buttons: [{ text: "Seç", href: "#contact" }], features: ["Özel ölçü", "Hızlı teslimat"] },
                     { id: "p2", badge: "Profesyonel", price: "Özel", subtitle: "Premium Çözümler", buttons: [{ text: "Seç", href: "#contact" }], features: ["UV Cam", "Modern Çerçeve"] },
@@ -82,6 +84,7 @@ export default function CanvasFramingPage() {
         <div id="faq" data-section="faq">
             <FaqDouble
                 title="Sıkça Sorulan Sorular"
+                description="Merak ettiğiniz tüm konular burada."
                 faqs={[
                     { id: "f1", title: "Özel ölçü yapıyor musunuz?", content: "Evet, tüm kanvaslarınız için tam ölçünüze özel üretim sağlıyoruz." },
                     { id: "f2", title: "Ankara içi nakliye var mı?", content: "Evet, Ankara geneline profesyonel montaj ve nakliye hizmetimiz vardır." }
@@ -104,7 +107,6 @@ export default function CanvasFramingPage() {
 
         <div id="footer" data-section="footer">
             <FooterSimple
-                logoText="Deniz Çerçeve"
                 columns={[
                     { title: "Hizmetler", items: [{ label: "Çerçeveleme", href: "#" }] },
                     { title: "İletişim", items: [{ label: "Ankara", href: "#" }] }
