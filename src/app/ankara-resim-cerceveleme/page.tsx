@@ -4,14 +4,15 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGallery';
-import MediaAbout from '@/components/sections/about/MediaAbout';
+import AboutMetric from '@/components/sections/about/AboutMetric';
 import PricingCardNine from '@/components/sections/pricing/PricingCardNine';
 import FeatureCardSixteen from '@/components/sections/feature/FeatureCardSixteen';
-import MetricCardTwo from '@/components/sections/metrics/MetricCardTwo';
-import TestimonialCardTwelve from '@/components/sections/testimonial/TestimonialCardTwelve';
-import FaqSplitText from '@/components/sections/faq/FaqSplitText';
-import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
-import FooterMedia from '@/components/sections/footer/FooterMedia';
+import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
+import TestimonialCardFive from '@/components/sections/testimonial/TestimonialCardFive';
+import FaqDouble from '@/components/sections/faq/FaqDouble';
+import ContactCenter from '@/components/sections/contact/ContactCenter';
+import FooterSimple from '@/components/sections/footer/FooterSimple';
+import { Star } from 'lucide-react';
 
 export default function AnkaraCercevelemePage() {
   const navLinks = [
@@ -36,7 +37,7 @@ export default function AnkaraCercevelemePage() {
     >
       <ReactLenis root>
         <div id="nav" data-section="nav">
-            <NavbarStyleCentered navItems={navLinks} brandName="Deniz Çerçeve" />
+            <NavbarStyleCentered navItems={navLinks} />
         </div>
 
         <div id="hero" data-section="hero">
@@ -44,14 +45,16 @@ export default function AnkaraCercevelemePage() {
                 title="Ankara Resim ve Tablo Çerçeveleme"
                 description="Sanat eserleriniz için profesyonel, modern ve dayanıklı çerçeveleme çözümleri. Ankara'nın merkezinde 50 yıllık tecrübe."
                 background={{ variant: "plain" }}
-                mediaItems={[]}
+                mediaItems={[{ imageSrc: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000", imageAlt: "Frame 1" }, { imageSrc: "https://images.unsplash.com/photo-1549490349-8643362247b0?q=80&w=2000", imageAlt: "Frame 2" }, { imageSrc: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=2000", imageAlt: "Frame 3" }]}
+                mediaAnimation="slide-up"
             />
         </div>
 
         <div id="about" data-section="about">
-            <MediaAbout
-                title="Hizmetlerimiz"
-                description="Resim çerçeveleme, özel ölçü puzzle çerçeveleri, kanvas şase ve daha fazlası."
+            <AboutMetric
+                title="Hakkımızda"
+                metrics={[{ id: "1", icon: Star, label: "Yıllık Deneyim", value: "50+" }, { id: "2", icon: Star, label: "Mutlu Müşteri", value: "10K+" }]}
+                metricsAnimation="slide-up"
                 useInvertedBackground={false}
             />
         </div>
@@ -60,9 +63,10 @@ export default function AnkaraCercevelemePage() {
             <PricingCardNine
                 title="Fiyatlandırma"
                 description="Tablo ve çerçeve modellerimize göre değişen uygun fiyatlı seçenekler."
-                plans={[]}
+                plans={[{ id: "p1", title: "Başlangıç", price: "₺150", period: "/adet", features: ["Basit çerçeve", "Standart cam"], button: { text: "Seç" } }]}
                 animationType="slide-up"
                 textboxLayout="split"
+                useInvertedBackground={false}
             />
         </div>
 
@@ -70,52 +74,59 @@ export default function AnkaraCercevelemePage() {
             <FeatureCardSixteen
                 title="Çerçeveleme Süreci"
                 description="Adım adım profesyonel çerçeveleme."
-                negativeCard={{ items: [] }}
-                positiveCard={{ items: [] }}
+                negativeCard={{ items: ["Ucuz malzeme", "Dayanıksız"] }}
+                positiveCard={{ items: ["Ahşap çerçeve", "Özel cam"] }}
                 animationType="slide-up"
                 textboxLayout="default"
+                useInvertedBackground={false}
             />
         </div>
 
         <div id="metrics" data-section="metrics">
-            <MetricCardTwo
+            <MetricCardOne
                 title="Neden Deniz Çerçeve"
                 description="Ankara'nın köklü çerçeveleme merkezi."
-                metrics={[]}
+                metrics={[{ id: "m1", value: "50", title: "Yıl", description: "Tecrübe", icon: Star }]}
                 gridVariant="uniform-all-items-equal"
                 animationType="slide-up"
                 textboxLayout="split"
+                useInvertedBackground={false}
             />
         </div>
 
         <div id="testimonials" data-section="testimonials">
-            <TestimonialCardTwelve
+            <TestimonialCardFive
                 title="Galeri"
-                testimonials={[]}
+                testimonials={[{ id: "t1", name: "Ahmet Y.", date: "2024", title: "Harika", quote: "Çok memnun kaldım.", tag: "Çerçeveleme", avatarSrc: "https://i.pravatar.cc/100" }]}
+                textboxLayout="split"
                 cardAnimation="slide-up"
+                useInvertedBackground={false}
             />
         </div>
 
         <div id="faq" data-section="faq">
-            <FaqSplitText
+            <FaqDouble
                 title="Sıkça Sorulan Sorular"
-                faqs={[]}
+                faqs={[{ id: "f1", title: "Süre ne kadar?", content: "Genelde 2-3 iş günü." }]}
                 faqsAnimation="slide-up"
+                textboxLayout="split"
+                useInvertedBackground={false}
             />
         </div>
 
         <div id="contact" data-section="contact">
-            <ContactSplitForm
+            <ContactCenter
+                tag="İletişim"
                 title="Teklif Formu"
                 description="İhtiyacınızı belirtin, size özel fiyat teklifi hazırlayalım."
-                inputs={[]}
+                useInvertedBackground={false}
             />
         </div>
 
         <div id="footer" data-section="footer">
-            <FooterMedia
-                logoText="Deniz Çerçeve"
-                columns={[]}
+            <FooterSimple
+                columns={[{ title: "Deniz Çerçeve", items: [{ label: "İletişim", href: "#contact" }] }]}
+                bottomLeftText="© 2025 Deniz Çerçeve"
             />
         </div>
       </ReactLenis>
