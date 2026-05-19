@@ -2,14 +2,14 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import HeroBillboardDashboard from '@/components/sections/hero/HeroBillboardDashboard';
-import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
+import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGallery';
+import AboutMetric from '@/components/sections/about/AboutMetric';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
-import FaqSplitText from '@/components/sections/faq/FaqSplitText';
-import ContactSplit from '@/components/sections/contact/ContactSplit';
-import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
+import FaqDouble from '@/components/sections/faq/FaqDouble';
+import ContactCenter from '@/components/sections/contact/ContactCenter';
+import FooterSimple from '@/components/sections/footer/FooterSimple';
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
-import { Palette, Ruler, CheckCircle, MapPin } from "lucide-react";
+import { Palette, Ruler, CheckCircle } from "lucide-react";
 
 export default function CanvasFramingPage() {
   return (
@@ -17,13 +17,13 @@ export default function CanvasFramingPage() {
         defaultButtonVariant="directional-hover"
         defaultTextAnimation="background-highlight"
         borderRadius="rounded"
-        contentWidth="smallMedium"
-        sizing="largeSizeMediumTitles"
-        background="fluid"
-        cardStyle="gradient-radial"
-        primaryButtonStyle="diagonal-gradient"
-        secondaryButtonStyle="radial-glow"
-        headingFontWeight="bold"
+        contentWidth="medium"
+        sizing="medium"
+        background="circleGradient"
+        cardStyle="glass-elevated"
+        primaryButtonStyle="gradient"
+        secondaryButtonStyle="glass"
+        headingFontWeight="normal"
     >
       <ReactLenis root>
         <div id="nav" data-section="nav">
@@ -32,6 +32,7 @@ export default function CanvasFramingPage() {
                 { name: "Anasayfa", id: "hero" },
                 { name: "Hakkımızda", id: "about" },
                 { name: "Süreç ve Fiyat", id: "pricing" },
+                { name: "SSS", id: "faq" },
                 { name: "İletişim", id: "contact" },
             ]}
             brandName="Deniz Çerçeve"
@@ -39,75 +40,74 @@ export default function CanvasFramingPage() {
         </div>
 
         <div id="hero" data-section="hero">
-            <HeroBillboardDashboard
+            <HeroBillboardGallery
                 title="Modern Kanvas Tablo Çerçeveleme"
-                description="Sanat eserleriniz için Ankara'nın en modern ve dayanıklı çerçeveleme çözümleri. 50 yıllık tecrübeyle, estetik ve güvenilir bir dokunuş."
-                dashboard={{
-                    title: "Üretim Süreci",                    stats: [
-                        { title: "Kalite", values: [98, 100, 95], description: "%98 Memnuniyet oranı" },
-                        { title: "Hız", values: [90, 85, 95], description: "Hızlı teslimat garantisi" }
-                    ],
-                    logoIcon: Palette,
-                    sidebarItems: [{ icon: Ruler, active: true }],
-                    listItems: [{ icon: CheckCircle, title: "Özel Ölçü Kesim", status: "Tamamlandı" }],
-                    imageSrc: "http://img.b2bpic.net/free-photo/photo-frame_1203-3262.jpg?_wi=1"
-                }}
+                description="Sanat eserleriniz için Ankara'nın en modern ve dayanıklı çerçeveleme çözümleri. 50 yıllık tecrübeyle."
+                mediaItems={[
+                    { imageSrc: "http://img.b2bpic.net/free-photo/photo-frame_1203-3262.jpg?_wi=1" },
+                    { imageSrc: "http://img.b2bpic.net/free-photo/blank-frames-wall_23-2148875414.jpg?_wi=1" },
+                    { imageSrc: "http://img.b2bpic.net/free-photo/art-concept-with-canvas-supplies_23-2148577653.jpg?_wi=1" }
+                ]}
                 buttons={[{ text: "Teklif Al", href: "#contact" }]}
             />
         </div>
 
         <div id="about" data-section="about">
-            <MetricSplitMediaAbout
-                title="Neden Bizim Çerçeveleme?"
-                description="Sanat eserlerinizi zamana karşı koruyan, modern tasarımlarla bütünleştiren profesyonel dokunuşlar."
+            <AboutMetric
+                title="Neden Biziz?"
                 metrics={[
-                    { value: "50 Yıl", title: "Tecrübe" },
-                    { value: "%100", title: "Yerli Ankara İmalatı" }
+                    { icon: Ruler, label: "Tecrübe", value: "50 Yıl" },
+                    { icon: Palette, label: "Kalite", value: "%98" },
+                    { icon: CheckCircle, label: "Üretim", value: "Yerli" }
                 ]}
-                imageSrc="http://img.b2bpic.net/free-photo/blank-frames-wall_23-2148875414.jpg?_wi=1"
+                metricsAnimation="slide-up"
                 useInvertedBackground={false}
             />
         </div>
 
         <div id="pricing" data-section="pricing">
             <PricingCardTwo
-                title="Çerçeveleme ve İmalat"
+                title="Çerçeveleme Hizmetleri"
                 plans={[
-                    { id: "p1", badge: "Başlangıç", price: "Özel", subtitle: "Standart ahşap çıtalar", features: ["Özel ölçü kesim", "Hızlı teslimat"] },
-                    { id: "p2", badge: "Profesyonel", price: "Özel", subtitle: "Premium malzeme", features: ["UV korumalı cam", "Modern tasarım", "Ömürlük garanti"] }
+                    { id: "p1", badge: "Başlangıç", price: "Özel", subtitle: "Standart Çözümler", buttons: [{ text: "Seç", href: "#contact" }], features: ["Özel ölçü", "Hızlı teslimat"] },
+                    { id: "p2", badge: "Profesyonel", price: "Özel", subtitle: "Premium Çözümler", buttons: [{ text: "Seç", href: "#contact" }], features: ["UV Cam", "Modern Çerçeve"] },
+                    { id: "p3", badge: "Kurumsal", price: "Özel", subtitle: "Toplu Projeler", buttons: [{ text: "Seç", href: "#contact" }], features: ["Yerinde Montaj", "İndirim"] }
                 ]}
                 animationType="slide-up"
                 textboxLayout="split"
+                useInvertedBackground={false}
             />
         </div>
 
         <div id="faq" data-section="faq">
-            <FaqSplitText
-                sideTitle="SSS"
-                sideDescription="Çerçeveleme süreci hakkında merak ettikleriniz."
+            <FaqDouble
+                title="Sıkça Sorulan Sorular"
                 faqs={[
-                    { id: "f1", title: "Özel ölçü yapıyormusunuz?", content: "Evet, tüm kanvaslarınız için tam ölçünüze özel üretim sağlıyoruz." },
-                    { id: "f2", title: "Ankara içi nakliye var mı?", content: "Ankara geneline profesyonel montaj ve nakliye hizmetimiz vardır." }
+                    { id: "f1", title: "Özel ölçü yapıyor musunuz?", content: "Evet, tüm kanvaslarınız için tam ölçünüze özel üretim sağlıyoruz." },
+                    { id: "f2", title: "Ankara içi nakliye var mı?", content: "Evet, Ankara geneline profesyonel montaj ve nakliye hizmetimiz vardır." }
                 ]}
                 faqsAnimation="slide-up"
+                textboxLayout="split"
+                useInvertedBackground={false}
             />
         </div>
 
         <div id="contact" data-section="contact">
-            <ContactSplit
+            <ContactCenter
+                tag="İletişim"
                 title="Hemen Teklif Alın"
-                description="Tablo ölçülerinizi ve istediğiniz çerçeve modelini bize iletin, hemen fiyatlandıralım."
-                imageSrc="http://img.b2bpic.net/free-photo/art-concept-with-canvas-supplies_23-2148577653.jpg?_wi=1"
-                mediaPosition="right"
+                description="Tablo ölçülerinizi iletin, fiyatlandıralım."
+                background={{ variant: "plain" }}
+                useInvertedBackground={false}
             />
         </div>
 
         <div id="footer" data-section="footer">
-            <FooterBaseCard
+            <FooterSimple
                 logoText="Deniz Çerçeve"
                 columns={[
-                    { title: "Hizmetler", items: [{ label: "Çerçeveleme", href: "#" }, { label: "Kanvas", href: "#" }] },
-                    { title: "İletişim", items: [{ label: "Ankara, Türkiye", href: "#" }] }
+                    { title: "Hizmetler", items: [{ label: "Çerçeveleme", href: "#" }] },
+                    { title: "İletişim", items: [{ label: "Ankara", href: "#" }] }
                 ]}
             />
         </div>
