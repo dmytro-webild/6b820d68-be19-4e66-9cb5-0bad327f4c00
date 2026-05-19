@@ -35,7 +35,7 @@ export default function LandingPage() {
         { name: "Anasayfa", id: "hero" },
         { name: "Hakkımızda", id: "about" },
         { name: "Ürünler", id: "products" },
-        { name: "Kanvas Çerçeveleme", id: "/kanvas-tablo-cerceveleme" },
+        { name: "Kanvas Çerçeveleme", id: "/ankara-resim-cerceveleme" },
         { name: "İletişim", id: "contact" },
       ]}
       brandName="Deniz Çerçeve"
