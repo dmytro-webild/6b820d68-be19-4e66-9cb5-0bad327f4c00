@@ -7,7 +7,7 @@ import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
 import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGallery';
-import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
+import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
 import TimelinePhoneView from '@/components/cardStack/layouts/timelines/TimelinePhoneView';
 import { Award, Box, Users, Phone } from "lucide-react";
@@ -28,7 +28,7 @@ export default function LandingPage() {
     >
       <ReactLenis root>
         <div id="nav" data-section="nav">
-            <NavbarStyleFullscreen
+            <NavbarStyleCentered
               navItems={[
                 { name: "Anasayfa", id: "hero" },
                 { name: "Süreç", id: "process" },
@@ -48,7 +48,7 @@ export default function LandingPage() {
               description="1974’ten beri üç kuşak tecrübeyle, imalattan aracısız satış ve özel ölçü üretim hizmetinizdeyiz."
               buttons={[{ text: "Teklif Al", href: "#contact" }, { text: "WhatsApp’tan Yaz", href: "#" }]}
               mediaItems={[
-                { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DuLC64vrw5MEWRhPmsIWQkpOvm/uploaded-1779187093229-9mf4zg12.png" },
+                { imageSrc: "http://img.b2bpic.net/free-photo/artist-front-blank-canvas_23-2147781648.jpg?_wi=1" },
                 { imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-senior-painter-indoors_23-2150182578.jpg" },
                 { imageSrc: "http://img.b2bpic.net/free-photo/red-deers-with-white-leaves-painted-wooden-board_1304-3707.jpg" }
               ]}
