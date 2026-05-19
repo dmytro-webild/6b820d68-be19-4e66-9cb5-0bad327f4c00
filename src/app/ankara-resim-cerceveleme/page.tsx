@@ -2,16 +2,15 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
-import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGallery';
-import MetricCardTwo from '@/components/sections/metrics/MetricCardTwo';
-import ProductCardThree from '@/components/sections/product/ProductCardThree';
-import PricingCardOne from '@/components/sections/pricing/PricingCardOne';
-import FeatureCardSixteen from '@/components/sections/feature/FeatureCardSixteen';
+import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
+import HeroBillboardRotatedCarousel from '@/components/sections/hero/HeroBillboardRotatedCarousel';
+import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
+import ProductCardFour from '@/components/sections/product/ProductCardFour';
+import PricingCardThree from '@/components/sections/pricing/PricingCardThree';
+import FeatureCardTwentyNine from '@/components/sections/feature/featureCardTwentyNine/FeatureCardTwentyNine';
 import FaqDouble from '@/components/sections/faq/FaqDouble';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
-import ContactText from '@/components/sections/contact/ContactText';
-import FooterSimple from '@/components/sections/footer/FooterSimple';
+import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 import { Phone, MessageCircle, FileText } from "lucide-react";
 
 export default function AnkaraCercevelemePage() {
@@ -37,74 +36,61 @@ export default function AnkaraCercevelemePage() {
     >
       <ReactLenis root>
         <div id="nav" data-section="nav">
-            <NavbarStyleCentered navItems={navLinks} />
+            <NavbarStyleApple navItems={navLinks} />
         </div>
 
         <div id="hero" data-section="hero">
-            <HeroBillboardGallery
+            <HeroBillboardRotatedCarousel
                 title="Ankara’da Resim ve Tablo Çerçeveleme Merkezi"
                 description="1974’ten beri 3 kuşak tecrübe, özel ölçü ve imalattan doğrudan satış ile sanat eserlerinizi koruyoruz."
                 background={{ variant: "plain" }}
-                mediaItems={[{ imageSrc: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000" }, { imageSrc: "https://images.unsplash.com/photo-1549490349-8643362247b0?q=80&w=2000" }, { imageSrc: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=2000" }]}
+                carouselItems={[{ id: "1", imageSrc: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000" }, { id: "2", imageSrc: "https://images.unsplash.com/photo-1549490349-8643362247b0?q=80&w=2000" }, { id: "3", imageSrc: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=2000" }, { id: "4", imageSrc: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000" }, { id: "5", imageSrc: "https://images.unsplash.com/photo-1549490349-8643362247b0?q=80&w=2000" }, { id: "6", imageSrc: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=2000" }]}
             />
         </div>
 
         <div id="products" data-section="products">
-            <ProductCardThree
+            <ProductCardFour
                 title="Hizmetlerimiz"
                 description="Resim, tablo, puzzle, diploma, forma, ayna ve rölyef çerçeveleme hizmetleri."
-                products={[{ id: "p1", name: "Resim & Tablo", price: "Teklif Al", imageSrc: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000" }, { id: "p2", name: "Puzzle & Diploma", price: "Teklif Al", imageSrc: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=2000" }, { id: "p3", name: "Ayna & Rölyef", price: "Teklif Al", imageSrc: "https://images.unsplash.com/photo-1549490349-8643362247b0?q=80&w=2000" }]}
+                products={[{ id: "p1", name: "Resim & Tablo", price: "Teklif Al", variant: "standart", imageSrc: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000" }, { id: "p2", name: "Puzzle & Diploma", price: "Teklif Al", variant: "standart", imageSrc: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=2000" }, { id: "p3", name: "Ayna & Rölyef", price: "Teklif Al", variant: "standart", imageSrc: "https://images.unsplash.com/photo-1549490349-8643362247b0?q=80&w=2000" }]}
                 gridVariant="three-columns-all-equal-width"
                 animationType="slide-up"
                 textboxLayout="split"
+                useInvertedBackground={false}
             />
         </div>
 
         <div id="pricing" data-section="pricing">
-            <PricingCardOne
+            <PricingCardThree
                 title="Fiyatlandırma Faktörleri"
                 description="Çerçeve kalitesi, cam türü ve boyutlara göre değişkenlik gösteren fiyatlandırma."
-                plans={[{ id: "f1", badge: "Bilgi", price: "Keşif", subtitle: "Detaylar için teklif alın", features: ["Ölçüye göre üretim", "Malzeme çeşitliliği", "Profesyonel montaj"] }]}
+                plans={[{ id: "f1", price: "Keşif", name: "Detaylar için teklif alın", buttons: [{ text: "Detaylar" }], features: ["Ölçüye göre üretim", "Malzeme çeşitliliği", "Profesyonel montaj"] }]}
                 animationType="slide-up"
                 textboxLayout="default"
+                useInvertedBackground={false}
             />
         </div>
 
         <div id="process" data-section="process">
-            <MetricCardTwo
+            <MetricCardSeven
                 title="4 Adımlı Süreç"
                 description="İhtiyacınızı belirleyin, en kısa sürede çerçeveleyelim."
-                metrics={[{ id: "1", value: "1", description: "Ölçüleri belirtin" }, { id: "2", value: "2", description: "Model seçimi" }, { id: "3", value: "3", description: "Özenli Üretim" }, { id: "4", value: "4", description: "Teslimat & Montaj" }]}
-                gridVariant="uniform-all-items-equal"
+                metrics={[{ id: "1", value: "1", title: "Ölçü", items: ["Ölçüleri belirtin"] }, { id: "2", value: "2", title: "Seçim", items: ["Model seçimi"] }, { id: "3", value: "3", title: "Üretim", items: ["Özenli Üretim"] }, { id: "4", value: "4", title: "Teslimat", items: ["Teslimat & Montaj"] }]}
                 animationType="slide-up"
                 textboxLayout="default"
+                useInvertedBackground={false}
             />
         </div>
 
         <div id="why-choose-us" data-section="why-choose-us">
-            <FeatureCardSixteen
+            <FeatureCardTwentyNine
                 title="Neden Deniz Çerçeve?"
                 description="Güvenilir zanaatkarlık, köklü geçmiş."
-                positiveCard={{ items: ["1974'ten beri tecrübe", "Özel ölçü imkanı", "Hızlı teslimat"] }}
-                negativeCard={{ items: ["Aracı yok", "Düşük kalite yok", "Gecikme yok"] }}
+                features={[{ title: "Tecrübe", description: "1974'ten beri tecrübe", imageSrc: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000", titleImageSrc: "", buttonText: "İncele" }, { title: "Özelleştirme", description: "Özel ölçü imkanı", imageSrc: "https://images.unsplash.com/photo-1549490349-8643362247b0?q=80&w=2000", titleImageSrc: "", buttonText: "İncele" }]}
+                gridVariant="two-columns-alternating-heights"
                 animationType="slide-up"
                 textboxLayout="default"
-            />
-        </div>
-
-        <div id="seo" data-section="seo">
-            <ContactText
-                text="Deniz Çerçeve olarak Ankara genelinde, profesyonel resim ve tablo çerçeveleme hizmetleri sunuyoruz. Sanat eserlerinizi en iyi kalitede ve uzun ömürlü malzemelerle çerçeveleyerek yaşam alanlarınıza değer katıyoruz. Ankara çerçeveleme merkezi arayışınızda 50 yıllık tecrübemizle yanınızdayız."
-                background={{ variant: "plain" }}
-            />
-        </div>
-
-        <div id="gallery" data-section="gallery">
-            <HeroBillboardGallery
-                title="Galeri"
-                description="Atölyemizden örnekler."
-                background={{ variant: "plain" }}
-                mediaItems={[{ imageSrc: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000" }, { imageSrc: "https://images.unsplash.com/photo-1549490349-8643362247b0?q=80&w=2000" }, { imageSrc: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=2000" }]}
+                useInvertedBackground={false}
             />
         </div>
 
@@ -115,6 +101,7 @@ export default function AnkaraCercevelemePage() {
                 faqs={[{ id: "f1", title: "Özel ölçü yapıyor musunuz?", content: "Evet, her türlü eserinize özel ölçü alıyoruz." }]}
                 faqsAnimation="slide-up"
                 textboxLayout="default"
+                useInvertedBackground={false}
             />
         </div>
 
@@ -128,18 +115,10 @@ export default function AnkaraCercevelemePage() {
             />
         </div>
 
-        <div id="contact-details" data-section="contact-details">
-            <ContactText
-                text="Adres: Ankara, Türkiye | Tel: 0555 000 00 00 | E-posta: info@denizcerceve.com | Saatler: 09:00 - 19:00"
-                background={{ variant: "plain" }}
-            />
-        </div>
-
         <div id="footer" data-section="footer">
-            <FooterSimple
+            <FooterBaseCard
+                logoText="Deniz Çerçeve"
                 columns={[{ title: "Deniz Çerçeve", items: [{ label: "Anasayfa", href: "/" }] }]}
-                bottomLeftText="© 2025 Deniz Çerçeve"
-                bottomRightText="Ankara"
             />
         </div>
         
