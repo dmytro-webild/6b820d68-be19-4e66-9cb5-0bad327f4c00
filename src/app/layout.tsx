@@ -7,6 +7,7 @@ import { ServiceWrapper } from "@/components/ServiceWrapper";
 import { getVisualEditScript } from "@/utils/visual-edit-script";
 import { Nunito } from "next/font/google";
 import { Manrope } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 
 
 
@@ -24,8 +25,9 @@ export const metadata: Metadata = {
 };
 
 
-const manrope = Manrope({
-  variable: "--font-manrope",
+
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
 });
 
@@ -37,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${manrope.variable} antialiased`}>
+        <body className={`${dmSans.variable} antialiased`}>
           
           {children}
           <script
