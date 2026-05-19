@@ -9,6 +9,7 @@ import { Nunito } from "next/font/google";
 import { Manrope } from "next/font/google";
 import { DM_Sans } from "next/font/google";
 import { Poppins } from "next/font/google";
+import { Libre_Baskerville } from "next/font/google";
 
 
 
@@ -28,10 +29,15 @@ export const metadata: Metadata = {
 
 
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+
+const libreBaskerville = Libre_Baskerville({
+  variable: "--font-libre-baskerville",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400", "700"],
+});
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
 });
 
 export default function RootLayout({
@@ -42,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${poppins.variable} antialiased`}>
+        <body className={`${libreBaskerville.variable} ${inter.variable} antialiased`}>
           
           {children}
           <script
