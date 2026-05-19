@@ -53,7 +53,7 @@ export default function AnkaraCercevelemePage() {
         <div id="about" data-section="about">
             <AboutMetric
                 title="Hakkımızda"
-                metrics={[{ id: "1", icon: Star, label: "Yıllık Deneyim", value: "50+" }, { id: "2", icon: Star, label: "Mutlu Müşteri", value: "10K+" }]}
+                metrics={[{ icon: Star, label: "Yıllık Deneyim", value: "50+" }, { icon: Star, label: "Mutlu Müşteri", value: "10K+" }]}
                 metricsAnimation="slide-up"
                 useInvertedBackground={false}
             />
@@ -99,7 +99,6 @@ export default function AnkaraCercevelemePage() {
                 title="Galeri"
                 testimonials={[{ id: "t1", name: "Ahmet Y.", date: "2024", title: "Harika", quote: "Çok memnun kaldım.", tag: "Çerçeveleme", avatarSrc: "https://i.pravatar.cc/100" }]}
                 textboxLayout="split"
-                cardAnimation="slide-up"
                 useInvertedBackground={false}
             />
         </div>
@@ -107,6 +106,7 @@ export default function AnkaraCercevelemePage() {
         <div id="faq" data-section="faq">
             <FaqDouble
                 title="Sıkça Sorulan Sorular"
+                description="Merak ettiklerinizi burada bulabilirsiniz."
                 faqs={[{ id: "f1", title: "Süre ne kadar?", content: "Genelde 2-3 iş günü." }]}
                 faqsAnimation="slide-up"
                 textboxLayout="split"
@@ -119,6 +119,7 @@ export default function AnkaraCercevelemePage() {
                 tag="İletişim"
                 title="Teklif Formu"
                 description="İhtiyacınızı belirtin, size özel fiyat teklifi hazırlayalım."
+                background={{ variant: "plain" }}
                 useInvertedBackground={false}
             />
         </div>
@@ -127,6 +128,7 @@ export default function AnkaraCercevelemePage() {
             <FooterSimple
                 columns={[{ title: "Deniz Çerçeve", items: [{ label: "İletişim", href: "#contact" }] }]}
                 bottomLeftText="© 2025 Deniz Çerçeve"
+                bottomRightText="Tüm hakları saklıdır."
             />
         </div>
       </ReactLenis>
