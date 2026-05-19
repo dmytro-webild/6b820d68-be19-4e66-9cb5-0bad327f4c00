@@ -5,15 +5,12 @@ import ReactLenis from "lenis/react";
 import AboutMetric from '@/components/sections/about/AboutMetric';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FaqBase from '@/components/sections/faq/FaqBase';
-import FeatureCardSixteen from '@/components/sections/feature/FeatureCardSixteen';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
 import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGallery';
-import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
-import TestimonialCardFive from '@/components/sections/testimonial/TestimonialCardFive';
 import TimelinePhoneView from '@/components/cardStack/layouts/timelines/TimelinePhoneView';
-import { Award, Box, History, MapPin, Users, Phone } from "lucide-react";
+import { Award, Box, Users, Phone } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -63,6 +60,8 @@ export default function LandingPage() {
             title="Üretim Sürecimiz"
             description="Siparişten teslimata 4 kolay adım."
             textboxLayout="default"
+            animationType="slide-up"
+            useInvertedBackground={false}
             items={[
               { trigger: "Ölçü Alımı", content: "İhtiyacınız olan boyutları belirleyin." },
               { trigger: "Malzeme Seçimi", content: "Ahşap ve tuval kalitesini seçin." },
@@ -75,6 +74,7 @@ export default function LandingPage() {
         <div id="about" data-section="about">
             <AboutMetric
               title="1974'ten Bugüne Zanaat"
+              useInvertedBackground={false}
               metrics={[
                 { icon: Award, label: "Tecrübe", value: "50+ Yıl" },
                 { icon: Box, label: "İmalat", value: "100%" },
@@ -89,6 +89,7 @@ export default function LandingPage() {
               textboxLayout="split"
               gridVariant="three-columns-all-equal-width"
               title="Ürünlerimiz"
+              useInvertedBackground={false}
               description="Özel ölçü imkanı ile imalattan direkt satış."
               products={[
                 { id: "p1", name: "Tuval Üretimi", price: "Teklif Al", imageSrc: "http://img.b2bpic.net/free-photo/photo-frame_1203-3262.jpg?_wi=1" },
@@ -104,6 +105,7 @@ export default function LandingPage() {
               description="Deniz Çerçeve ile ilgili merak ettikleriniz."
               textboxLayout="default"
               faqsAnimation="slide-up"
+              useInvertedBackground={false}
               faqs={[
                 { id: "q1", title: "Özel ölçü üretim yapıyor musunuz?", content: "Evet, tüm ürünlerimizde özel ölçülerde üretim sağlıyoruz." },
                 { id: "q2", title: "Toplu sipariş verebilir miyiz?", content: "Evet, işletmeler için toplu üretim imkanımız mevcuttur." }
@@ -115,6 +117,7 @@ export default function LandingPage() {
             <ContactSplitForm
               title="Detaylı Teklif Formu"
               description="Lütfen ihtiyacınız olan hizmeti ve boyutları belirtin."
+              useInvertedBackground={false}
               inputs={[
                 { name: "name", type: "text", placeholder: "Adınız Soyadınız", required: true },
                 { name: "phone", type: "tel", placeholder: "Telefon Numaranız", required: true }
