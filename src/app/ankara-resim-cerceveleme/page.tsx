@@ -6,7 +6,7 @@ import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleAp
 import HeroBillboardRotatedCarousel from '@/components/sections/hero/HeroBillboardRotatedCarousel';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import ProductCardFour from '@/components/sections/product/ProductCardFour';
-import PricingCardThree from '@/components/sections/pricing/PricingCardThree';
+import PricingCardFive from '@/components/sections/pricing/PricingCardFive';
 import FeatureCardTwentyNine from '@/components/sections/feature/featureCardTwentyNine/FeatureCardTwentyNine';
 import FaqDouble from '@/components/sections/faq/FaqDouble';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
@@ -60,22 +60,23 @@ export default function AnkaraCercevelemePage() {
             />
         </div>
 
-        <div id="pricing" data-section="pricing">
-            <PricingCardThree
-                title="Fiyatlandırma Faktörleri"
-                description="Çerçeve kalitesi, cam türü ve boyutlara göre değişkenlik gösteren fiyatlandırma."
-                plans={[{ id: "f1", price: "Keşif", name: "Detaylar için teklif alın", buttons: [{ text: "Detaylar" }], features: ["Ölçüye göre üretim", "Malzeme çeşitliliği", "Profesyonel montaj"] }]}
-                animationType="slide-up"
-                textboxLayout="default"
-                useInvertedBackground={false}
-            />
+        <div id="pricing-works" data-section="pricing-works">
+          <PricingCardFive
+            title="Nasıl Fiyatlandırıyoruz?"
+            description="Çerçeveleme fiyatlarımız eserinizin boyutuna, tercih ettiğiniz çerçeve modeline, cam ve paspartu seçiminize, malzeme kalitesine, el işçiliğine ve teslimat süresine göre özel olarak hesaplanır."
+            plans={[]}
+            animationType="slide-up"
+            textboxLayout="default"
+            buttons={[{ text: "WhatsApp'tan Görsel Gönder", href: "https://wa.me/905550000000" }]}
+            useInvertedBackground={true}
+          />
         </div>
 
         <div id="process" data-section="process">
             <MetricCardSeven
                 title="4 Adımlı Süreç"
                 description="İhtiyacınızı belirleyin, en kısa sürede çerçeveleyelim."
-                metrics={[{ id: "1", value: "1", title: "Ölçü", items: ["Ölçüleri belirtin"] }, { id: "2", value: "2", title: "Seçim", items: ["Model seçimi"] }, { id: "3", value: "3", title: "Üretim", items: ["Özenli Üretim"] }, { id: "4", value: "4", title: "Teslimat", items: ["Teslimat & Montaj"] }]}
+                metrics={[{ id: "1", value: "1", title: "Ölçü", items: ["Ölçüleri belirtin"] }, { id: "2", value: "2", title: "Seçim", items: ["Model seçimi"] }, { id: "3", value: "3", title: "Üretim", items: ["Özenli Üretim"] }, { id: "4", value: "4", title: "Teslimat", items: ["Teslimat & Montaj"] }]} 
                 animationType="slide-up"
                 textboxLayout="default"
                 useInvertedBackground={false}
