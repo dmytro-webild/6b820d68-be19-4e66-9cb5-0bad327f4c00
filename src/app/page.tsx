@@ -11,10 +11,9 @@ import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGaller
 import MetricCardTwo from '@/components/sections/metrics/MetricCardTwo';
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
-import TestimonialCardFive from '@/components/sections/testimonial/TestimonialCardFive';
 import PricingCardOne from '@/components/sections/pricing/PricingCardOne';
 import ContactText from '@/components/sections/contact/ContactText';
-import { Award, Box, History, MapPin, Users, Phone, MessageCircle, FileText } from "lucide-react";
+import { Award, Box, Users, Phone, MessageCircle, FileText } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -74,6 +73,8 @@ export default function LandingPage() {
       ]}
       gridVariant="uniform-all-items-equal"
       animationType="slide-up"
+      textboxLayout="split"
+      useInvertedBackground={false}
     />
   </div>
 
@@ -115,6 +116,8 @@ export default function LandingPage() {
         { id: "premium", badge: "Profesyonel", price: "Teklif İste", subtitle: "Sanatçılar ve galeriler için", features: ["Özel tasarım çerçeve", "Müze kalitesi koruma", "Kişiye özel renk seçenekleri"] }
       ]}
       animationType="slide-up"
+      textboxLayout="split"
+      useInvertedBackground={false}
     />
   </div>
 
@@ -148,6 +151,7 @@ export default function LandingPage() {
     <ContactText
       text="Ankara çerçeve ve tuval ihtiyacınızda, 50 yıllık köklü geçmişimizle profesyonel çözümler sunuyoruz. Çankaya, Yenimahalle ve tüm Ankara bölgesine hızlı teslimat ve özel ölçü imkanı ile hizmet vermekteyiz. Sanat eserlerinizi en iyi koruyacak çözümler için bizimle iletişime geçin."
       background={{ variant: "plain" }}
+      useInvertedBackground={false}
     />
   </div>
 
@@ -160,8 +164,10 @@ export default function LandingPage() {
         }
       ]}
       title="Sıkça Sorulan Sorular"
+      description="Merak ettiğiniz her şey burada."
       faqsAnimation="slide-up"
       textboxLayout="split"
+      useInvertedBackground={true}
     />
   </div>
 
@@ -171,6 +177,7 @@ export default function LandingPage() {
       title="Projeniz İçin Teklif Alın"
       description="Ölçülerinizi ve detayları yazın, en kısa sürede size ulaşalım."
       background={{ variant: "gradient-bars" }}
+      useInvertedBackground={false}
     />
   </div>
 
@@ -178,6 +185,7 @@ export default function LandingPage() {
       <ContactText
       text="Adres: Ankara Merkez / Türkiye | Çalışma Saatleri: 09:00 - 19:00"
       background={{ variant: "plain" }}
+      useInvertedBackground={false}
     />
   </div>
 
@@ -192,7 +200,6 @@ export default function LandingPage() {
     />
   </div>
   
-  {/* Sticky Mobile Bar */}
   <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 z-50 flex md:hidden p-2">
     <a href="tel:+905550000000" className="flex-1 flex flex-col items-center py-2 text-xs font-semibold"><Phone className="size-5" />Ara</a>
     <a href="https://wa.me/905550000000" className="flex-1 flex flex-col items-center py-2 text-xs font-semibold"><MessageCircle className="size-5" />WhatsApp</a>
