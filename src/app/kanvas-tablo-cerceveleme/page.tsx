@@ -4,7 +4,6 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGallery';
 import AboutMetric from '@/components/sections/about/AboutMetric';
-import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import FaqDouble from '@/components/sections/faq/FaqDouble';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
@@ -31,7 +30,6 @@ export default function CanvasFramingPage() {
             navItems={[
                 { name: "Anasayfa", id: "hero" },
                 { name: "Hakkımızda", id: "about" },
-                { name: "Süreç ve Fiyat", id: "pricing" },
                 { name: "SSS", id: "faq" },
                 { name: "İletişim", id: "contact" },
             ]}
@@ -66,21 +64,6 @@ export default function CanvasFramingPage() {
             />
         </div>
 
-        <div id="pricing" data-section="pricing">
-            <PricingCardTwo
-                title="Çerçeveleme Hizmetleri"
-                description="Size en uygun çerçeveleme çözümlerini sunuyoruz."
-                plans={[
-                    { id: "p1", badge: "Başlangıç", price: "Özel", subtitle: "Standart Çözümler", buttons: [{ text: "Seç", href: "#contact" }], features: ["Özel ölçü", "Hızlı teslimat"] },
-                    { id: "p2", badge: "Profesyonel", price: "Özel", subtitle: "Premium Çözümler", buttons: [{ text: "Seç", href: "#contact" }], features: ["UV Cam", "Modern Çerçeve"] },
-                    { id: "p3", badge: "Kurumsal", price: "Özel", subtitle: "Toplu Projeler", buttons: [{ text: "Seç", href: "#contact" }], features: ["Yerinde Montaj", "İndirim"] }
-                ]}
-                animationType="slide-up"
-                textboxLayout="split"
-                useInvertedBackground={false}
-            />
-        </div>
-
         <div id="faq" data-section="faq">
             <FaqDouble
                 title="Sıkça Sorulan Sorular"
@@ -111,6 +94,8 @@ export default function CanvasFramingPage() {
                     { title: "Hizmetler", items: [{ label: "Çerçeveleme", href: "#" }] },
                     { title: "İletişim", items: [{ label: "Ankara", href: "#" }] }
                 ]}
+                bottomLeftText="© 2025 Deniz Çerçeve"
+                bottomRightText="Tüm hakları saklıdır."
             />
         </div>
       </ReactLenis>
