@@ -6,6 +6,7 @@ import "@/lib/gsap-setup";
 import { ServiceWrapper } from "@/components/ServiceWrapper";
 import { getVisualEditScript } from "@/utils/visual-edit-script";
 import { Nunito } from "next/font/google";
+import { Manrope } from "next/font/google";
 
 
 
@@ -22,8 +23,9 @@ export const metadata: Metadata = {
   },
 };
 
-const nunito = Nunito({
-  variable: "--font-nunito",
+
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
 });
 
@@ -35,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${nunito.variable} antialiased`}>
+        <body className={`${manrope.variable} antialiased`}>
           
           {children}
           <script
