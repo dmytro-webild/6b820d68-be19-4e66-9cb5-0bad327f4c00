@@ -54,8 +54,8 @@ export default function LandingPage() {
       ]}
       mediaItems={[
         { imageSrc: "http://img.b2bpic.net/free-photo/artist-front-blank-canvas_23-2147781648.jpg?_wi=1", imageAlt: "Çerçeveleme atölyesi" },
-        { imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-senior-painter-indoors_23-2150182578.jpg", imageAlt: "Tuval imalatı" },
-        { imageSrc: "http://img.b2bpic.net/free-photo/red-deers-with-white-leaves-painted-wooden-board_1304-3707.jpg", imageAlt: "Şövale ürünleri" }
+        { imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-senior-painter-indoors_23-2150182578.jpg?_wi=1", imageAlt: "Tuval imalatı" },
+        { imageSrc: "http://img.b2bpic.net/free-photo/red-deers-with-white-leaves-painted-wooden-board_1304-3707.jpg?_wi=1", imageAlt: "Şövale ürünleri" }
       ]}
       mediaAnimation="slide-up"
     />
@@ -139,8 +139,8 @@ export default function LandingPage() {
         description="Üretim sürecimiz ve tamamlanmış eserlerimiz."
         mediaItems={[
           { imageSrc: "http://img.b2bpic.net/free-photo/artist-front-blank-canvas_23-2147781648.jpg?_wi=1" },
-          { imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-senior-painter-indoors_23-2150182578.jpg" },
-          { imageSrc: "http://img.b2bpic.net/free-photo/red-deers-with-white-leaves-painted-wooden-board_1304-3707.jpg" }
+          { imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-senior-painter-indoors_23-2150182578.jpg?_wi=2" },
+          { imageSrc: "http://img.b2bpic.net/free-photo/red-deers-with-white-leaves-painted-wooden-board_1304-3707.jpg?_wi=2" }
         ]}
         mediaAnimation="blur-reveal"
         background={{ variant: "plain" }}
