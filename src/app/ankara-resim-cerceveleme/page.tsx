@@ -97,6 +97,7 @@ export default function AnkaraCercevelemePage() {
         <div id="testimonials" data-section="testimonials">
             <TestimonialCardFive
                 title="Galeri"
+                description="Müşterilerimizin eserleri."
                 testimonials={[{ id: "t1", name: "Ahmet Y.", date: "2024", title: "Harika", quote: "Çok memnun kaldım.", tag: "Çerçeveleme", avatarSrc: "https://i.pravatar.cc/100" }]}
                 textboxLayout="split"
                 useInvertedBackground={false}
