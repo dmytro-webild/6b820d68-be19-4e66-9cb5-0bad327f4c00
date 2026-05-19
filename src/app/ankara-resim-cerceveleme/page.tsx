@@ -44,7 +44,7 @@ export default function AnkaraCercevelemePage() {
                 title="Ankara’da Resim ve Tablo Çerçeveleme Merkezi"
                 description="1974’ten beri 3 kuşak tecrübe, özel ölçü ve imalattan doğrudan satış ile sanat eserlerinizi koruyoruz."
                 background={{ variant: "plain" }}
-                carouselItems={[{ id: "1", imageSrc: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000" }, { id: "2", imageSrc: "https://images.unsplash.com/photo-1549490349-8643362247b0?q=80&w=2000" }, { id: "3", imageSrc: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=2000" }, { id: "4", imageSrc: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000" }, { id: "5", imageSrc: "https://images.unsplash.com/photo-1549490349-8643362247b0?q=80&w=2000" }, { id: "6", imageSrc: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=2000" }]}
+                carouselItems={[{ id: "1", imageSrc: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000&_wi=1" }, { id: "2", imageSrc: "https://images.unsplash.com/photo-1549490349-8643362247b0?q=80&w=2000&_wi=1" }, { id: "3", imageSrc: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=2000&_wi=1" }, { id: "4", imageSrc: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000&_wi=2" }, { id: "5", imageSrc: "https://images.unsplash.com/photo-1549490349-8643362247b0?q=80&w=2000&_wi=2" }, { id: "6", imageSrc: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=2000&_wi=2" }]}
             />
         </div>
 
@@ -52,7 +52,7 @@ export default function AnkaraCercevelemePage() {
             <ProductCardFour
                 title="Hizmetlerimiz"
                 description="Resim, tablo, puzzle, diploma, forma, ayna ve rölyef çerçeveleme hizmetleri."
-                products={[{ id: "p1", name: "Resim & Tablo", price: "Teklif Al", variant: "standart", imageSrc: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000" }, { id: "p2", name: "Puzzle & Diploma", price: "Teklif Al", variant: "standart", imageSrc: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=2000" }, { id: "p3", name: "Ayna & Rölyef", price: "Teklif Al", variant: "standart", imageSrc: "https://images.unsplash.com/photo-1549490349-8643362247b0?q=80&w=2000" }]}
+                products={[{ id: "p1", name: "Resim & Tablo", price: "Teklif Al", variant: "standart", imageSrc: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000&_wi=3" }, { id: "p2", name: "Puzzle & Diploma", price: "Teklif Al", variant: "standart", imageSrc: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=2000&_wi=3" }, { id: "p3", name: "Ayna & Rölyef", price: "Teklif Al", variant: "standart", imageSrc: "https://images.unsplash.com/photo-1549490349-8643362247b0?q=80&w=2000&_wi=3" }]}
                 gridVariant="three-columns-all-equal-width"
                 animationType="slide-up"
                 textboxLayout="split"
@@ -86,7 +86,7 @@ export default function AnkaraCercevelemePage() {
             <FeatureCardTwentyNine
                 title="Neden Deniz Çerçeve?"
                 description="Güvenilir zanaatkarlık, köklü geçmiş."
-                features={[{ title: "Tecrübe", description: "1974'ten beri tecrübe", imageSrc: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000", titleImageSrc: "", buttonText: "İncele" }, { title: "Özelleştirme", description: "Özel ölçü imkanı", imageSrc: "https://images.unsplash.com/photo-1549490349-8643362247b0?q=80&w=2000", titleImageSrc: "", buttonText: "İncele" }]}
+                features={[{ title: "Tecrübe", description: "1974'ten beri tecrübe", imageSrc: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000&_wi=4", titleImageSrc: "", buttonText: "İncele" }, { title: "Özelleştirme", description: "Özel ölçü imkanı", imageSrc: "https://images.unsplash.com/photo-1549490349-8643362247b0?q=80&w=2000&_wi=4", titleImageSrc: "", buttonText: "İncele" }]}
                 gridVariant="two-columns-alternating-heights"
                 animationType="slide-up"
                 textboxLayout="default"
