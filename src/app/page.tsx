@@ -33,9 +33,8 @@ export default function LandingPage() {
         { name: "Anasayfa", id: "hero" },
         { name: "Hakkımızda", id: "about" },
         { name: "Ürünler", id: "products" },
-        { name: "SSS", id: "faq" },
-        { name: "İletişim", id: "contact" },
-        { name: "Teklif Al", id: "quote" }
+        { name: "Şövale", id: "/sovale" },
+        { name: "İletişim", id: "/iletisim" }
       ]}
       brandName="Deniz Çerçeve"
     />
@@ -139,7 +138,7 @@ export default function LandingPage() {
       <FooterSimple
       columns={[
         { title: "Deniz Çerçeve", items: [{ label: "Hakkımızda", href: "#about" }, { label: "Yol Tarifi", href: "https://www.google.com/maps/search/?api=1&query=Deniz+Çerçeve+Ankara" }] },
-        { title: "Ürünler", items: [{ label: "Teklif Al", href: "#quote" }, { label: "İletişim", href: "#contact" }] },
+        { title: "Ürünler", items: [{ label: "Şövale", href: "/sovale" }, { label: "İletişim", href: "/iletisim" }] },
       ]}
       bottomLeftText="© 2025 Deniz Çerçeve. Tüm hakları saklıdır."
       bottomRightText="Ankara, Türkiye"
