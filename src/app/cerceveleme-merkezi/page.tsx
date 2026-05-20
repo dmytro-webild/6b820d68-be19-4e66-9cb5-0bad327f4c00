@@ -9,7 +9,7 @@ import FooterSimple from '@/components/sections/footer/FooterSimple';
 
 export default function CercevelemePage() {
   return (
-    <ThemeProvider>
+    <ThemeProvider defaultButtonVariant="directional-hover" defaultTextAnimation="entrance-slide" borderRadius="rounded" contentWidth="medium" sizing="medium" background="circleGradient" cardStyle="glass-elevated" primaryButtonStyle="gradient" secondaryButtonStyle="glass" headingFontWeight="normal">
       <ReactLenis root>
         <NavbarStyleCentered
           navItems={[
@@ -35,9 +35,13 @@ export default function CercevelemePage() {
             tag="Fiyat Teklifi"
             title="Çerçeveleme Teklifi Alın"
             description="Çerçevelenecek eserin detaylarını bize iletin."
+            background={{ variant: "gradient-bars" }}
+            useInvertedBackground={false}
         />
         <FooterSimple
             columns={[{ title: "Deniz Çerçeve", items: [{ label: "Anasayfa", href: "/" }] }]}
+            bottomLeftText="© 2025 Deniz Çerçeve"
+            bottomRightText="Ankara"
         />
       </ReactLenis>
     </ThemeProvider>
