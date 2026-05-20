@@ -36,12 +36,15 @@ export default function ContactPage() {
           title="İletişim Bilgileri ve Destek"
           description="Ankara'daki atölyemizden tüm Türkiye'ye gönderim yapıyoruz. Sorularınız için hemen formdan bize yazın."
           background={{ variant: "gradient-bars" }}
+          useInvertedBackground={false}
         />
         <FooterSimple
           columns={[
             { title: "Deniz Çerçeve", items: [{ label: "Anasayfa", href: "/" }, { label: "Hakkımızda", href: "/#about" }] },
             { title: "İletişim", items: [{ label: "İletişim", href: "/iletisim" }] },
           ]}
+          bottomLeftText="© 2025 Deniz Çerçeve"
+          bottomRightText="Ankara"
         />
       </ReactLenis>
     </ThemeProvider>
