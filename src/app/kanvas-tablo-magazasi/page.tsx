@@ -35,15 +35,15 @@ export default function KanvasMagazasi() {
             textboxLayout="split"
             useInvertedBackground={false}
             products={[
-              { id: "k1", name: "Manzara Kanvaslar", price: "Teklif Al", imageSrc: "http://img.b2bpic.net/free-photo/red-deers-with-white-leaves-painted-wooden-board_1304-3707.jpg?_wi=1", priceButtonProps: { href: "#quote" } },
-              { id: "k2", name: "Modern Soyut Tablolar", price: "Teklif Al", imageSrc: "http://img.b2bpic.net/free-photo/blank-frames-wall_23-2148875414.jpg?_wi=1", priceButtonProps: { href: "#quote" } },
-              { id: "k3", name: "Özel Tasarım Kanvas", price: "Teklif Al", imageSrc: "http://img.b2bpic.net/free-photo/artist-front-blank-canvas_23-2147781648.jpg?_wi=1", priceButtonProps: { href: "#quote" } }
+              { id: "k1", name: "Manzara Kanvaslar", price: "Teklif Al", imageSrc: "http://img.b2bpic.net/red-deers-with-white-leaves-painted-wooden-board_1304-3707.jpg?_wi=1", priceButtonProps: { href: "#quote" } },
+              { id: "k2", name: "Modern Soyut Tablolar", price: "Teklif Al", imageSrc: "http://img.b2bpic.net/blank-frames-wall_23-2148875414.jpg?_wi=1", priceButtonProps: { href: "#quote" } },
+              { id: "k3", name: "Özel Tasarım Kanvas", price: "Teklif Al", imageSrc: "http://img.b2bpic.net/artist-front-blank-canvas_23-2147781648.jpg?_wi=1", priceButtonProps: { href: "#quote" } }
             ]}
             title="Öne Çıkan Modeller"
             description="Koleksiyonumuzu keşfedin ve mekanınıza değer katın."
           />
         </div>
-        <div id="quote"><ContactCenter title="Özel Kanvas Teklifi Alın" description="İstediğiniz ölçü ve tasarımı belirtin, hemen üretelim." tag="Teklif" /></div>
+        <div id="quote"><ContactCenter title="Özel Kanvas Teklifi Alın" description="İstediğiniz ölçü ve tasarımı belirtin, hemen üretelim." tag="Teklif" background={{ variant: "gradient-bars" }} useInvertedBackground={false} /></div>
         <FooterSimple columns={[{ title: "Deniz Çerçeve", items: [{ label: "Anasayfa", href: "/" }] }]} bottomLeftText="© 2025 Deniz Çerçeve" bottomRightText="Ankara" />
       </ReactLenis>
     </ThemeProvider>
