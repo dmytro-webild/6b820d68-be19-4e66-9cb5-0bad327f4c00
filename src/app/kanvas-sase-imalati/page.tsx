@@ -41,7 +41,7 @@ export default function SaseImalati() {
             metricsAnimation="slide-up"
           />
         </div>
-        <div id="quote"><ContactCenter title="Şase İmalatı Teklifi Alın" description="Projeniz için gereken ahşap şase ölçülerini paylaşın, imalat detaylarını görüşelim." tag="Teklif" /></div>
+        <div id="quote"><ContactCenter title="Şase İmalatı Teklifi Alın" description="Projeniz için gereken ahşap şase ölçülerini paylaşın, imalat detaylarını görüşelim." tag="Teklif" background={{ variant: "gradient-bars" }} useInvertedBackground={false} /></div>
         <FooterSimple columns={[{ title: "Deniz Çerçeve", items: [{ label: "Anasayfa", href: "/" }] }]} bottomLeftText="© 2025 Deniz Çerçeve" bottomRightText="Ankara" />
       </ReactLenis>
     </ThemeProvider>
