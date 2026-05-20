@@ -9,7 +9,7 @@ import FooterSimple from '@/components/sections/footer/FooterSimple';
 
 export default function TuvalPage() {
   return (
-    <ThemeProvider>
+    <ThemeProvider defaultButtonVariant="directional-hover" defaultTextAnimation="entrance-slide" borderRadius="rounded" contentWidth="medium" sizing="medium" background="circleGradient" cardStyle="glass-elevated" primaryButtonStyle="gradient" secondaryButtonStyle="glass" headingFontWeight="normal">
       <ReactLenis root>
         <NavbarStyleCentered
           navItems={[
@@ -26,8 +26,8 @@ export default function TuvalPage() {
             description="Sanatçılar için profesyonel tuval, şövale ve özel kanvas şase üretim hizmetlerimizle imalattan direkt satış yapıyoruz."
             mediaItems={[
                 { imageSrc: "http://img.b2bpic.net/free-photo/artist-front-blank-canvas_23-2147781648.jpg?_wi=1", imageAlt: "Tuval" },
-                { imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-senior-painter-indoors_23-2150182578.jpg?_wi=1", imageAlt: "Resim üretimi" },
-                { imageSrc: "http://img.b2bpic.net/free-photo/red-deers-with-white-leaves-painted-wooden-board_1304-3707.jpg?_wi=1", imageAlt: "Şövale" }
+                { imageSrc: "http://img.b2bpic.net/medium-shot-senior-painter-indoors_23-2150182578.jpg?_wi=1", imageAlt: "Resim üretimi" },
+                { imageSrc: "http://img.b2bpic.net/red-deers-with-white-leaves-painted-wooden-board_1304-3707.jpg?_wi=1", imageAlt: "Şövale" }
             ]}
             mediaAnimation="slide-up"
         />
@@ -35,9 +35,13 @@ export default function TuvalPage() {
             tag="Fiyat Teklifi"
             title="Tuval Üretimi İçin Teklif Alın"
             description="İstediğiniz ölçülerde kanvas şase üretimi için formu doldurun."
+            background={{ variant: "gradient-bars" }}
+            useInvertedBackground={false}
         />
         <FooterSimple
             columns={[{ title: "Deniz Çerçeve", items: [{ label: "Anasayfa", href: "/" }] }]}
+            bottomLeftText="© 2025 Deniz Çerçeve"
+            bottomRightText="Ankara"
         />
       </ReactLenis>
     </ThemeProvider>
