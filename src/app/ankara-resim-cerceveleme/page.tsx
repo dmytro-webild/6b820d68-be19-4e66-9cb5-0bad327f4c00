@@ -9,16 +9,16 @@ import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import PricingCardFive from '@/components/sections/pricing/PricingCardFive';
 import FeatureCardTwentyNine from '@/components/sections/feature/featureCardTwentyNine/FeatureCardTwentyNine';
 import FaqDouble from '@/components/sections/faq/FaqDouble';
-import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
+import ContactText from '@/components/sections/contact/ContactText';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
-import { Phone, MessageCircle, FileText } from "lucide-react";
+import { Phone, MessageCircle, FileText, MapPin, Instagram } from "lucide-react";
 
 export default function AnkaraCercevelemePage() {
   const navLinks = [
     { name: "Anasayfa", id: "hero" },
     { name: "Hizmetler", id: "products" },
     { name: "SSS", id: "faq" },
-    { name: "İletişim", id: "contact" },
+    { name: "İletişim", id: "quote" },
   ];
 
   return (
@@ -60,35 +60,11 @@ export default function AnkaraCercevelemePage() {
             />
         </div>
 
-        <div id="pricing-works" data-section="pricing-works">
-          <PricingCardFive
-            title="Nasıl Fiyatlandırıyoruz?"
-            description="Çerçeveleme fiyatlarımız eserinizin boyutuna, tercih ettiğiniz çerçeve modeline, cam ve paspartu seçiminize, malzeme kalitesine, el işçiliğine ve teslimat süresine göre özel olarak hesaplanır."
-            plans={[]}
-            animationType="slide-up"
-            textboxLayout="default"
-            buttons={[{ text: "WhatsApp'tan Görsel Gönder", href: "https://wa.me/905550000000" }]}
-            useInvertedBackground={true}
-          />
-        </div>
-
         <div id="process" data-section="process">
             <MetricCardSeven
                 title="4 Adımlı Süreç"
                 description="İhtiyacınızı belirleyin, en kısa sürede çerçeveleyelim."
                 metrics={[{ id: "1", value: "1", title: "Ölçü", items: ["Ölçüleri belirtin"] }, { id: "2", value: "2", title: "Seçim", items: ["Model seçimi"] }, { id: "3", value: "3", title: "Üretim", items: ["Özenli Üretim"] }, { id: "4", value: "4", title: "Teslimat", items: ["Teslimat & Montaj"] }]} 
-                animationType="slide-up"
-                textboxLayout="default"
-                useInvertedBackground={false}
-            />
-        </div>
-
-        <div id="why-choose-us" data-section="why-choose-us">
-            <FeatureCardTwentyNine
-                title="Neden Deniz Çerçeve?"
-                description="Güvenilir zanaatkarlık, köklü geçmiş."
-                features={[{ title: "Tecrübe", description: "1974'ten beri tecrübe", imageSrc: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000&_wi=4", titleImageSrc: "", buttonText: "İncele" }, { title: "Özelleştirme", description: "Özel ölçü imkanı", imageSrc: "https://images.unsplash.com/photo-1549490349-8643362247b0?q=80&w=2000&_wi=4", titleImageSrc: "", buttonText: "İncele" }]}
-                gridVariant="two-columns-alternating-heights"
                 animationType="slide-up"
                 textboxLayout="default"
                 useInvertedBackground={false}
@@ -107,13 +83,23 @@ export default function AnkaraCercevelemePage() {
         </div>
 
         <div id="quote" data-section="quote">
-            <ContactSplitForm
-                title="Teklif Formu"
-                description="İhtiyaçlarınızı belirtin, size özel teklif oluşturalım."
-                inputs={[{ name: "name", type: "text", placeholder: "İsim" }, { name: "phone", type: "tel", placeholder: "Telefon" }, { name: "size", type: "text", placeholder: "Boyut" }, { name: "qty", type: "number", placeholder: "Adet" }]}
-                textarea={{ name: "notes", placeholder: "Detaylı bilgi..." }}
+            <ContactText
+                text="Deniz Çerçeveye Ulaşın"
+                buttons={[
+                    { text: "Hemen Ara", href: "tel:+905550000000" },
+                    { text: "WhatsApp'tan Yaz", href: "https://wa.me/905550000000" },
+                    { text: "Yol Tarifi Al", href: "https://maps.google.com" },
+                    { text: "Instagram", href: "https://instagram.com/denizcerceve" }
+                ]}
+                background={{ variant: "plain" }}
                 useInvertedBackground={false}
             />
+            <div className="text-center py-10">
+              <p>Adres: Ankara, Türkiye</p>
+              <p>Telefon: +90 555 000 0000</p>
+              <p>E-posta: info@denizcerceve.com</p>
+              <p>Çalışma Saatleri: 09:00 - 19:00</p>
+            </div>
         </div>
 
         <div id="footer" data-section="footer">
@@ -126,7 +112,7 @@ export default function AnkaraCercevelemePage() {
         <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 z-50 flex md:hidden p-2">
             <a href="tel:+905550000000" className="flex-1 flex flex-col items-center py-2 text-xs font-semibold"><Phone className="size-5" />Ara</a>
             <a href="https://wa.me/905550000000" className="flex-1 flex flex-col items-center py-2 text-xs font-semibold"><MessageCircle className="size-5" />WhatsApp</a>
-            <a href="#quote" className="flex-1 flex flex-col items-center py-2 text-xs font-semibold"><FileText className="size-5" />Teklif</a>
+            <a href="https://maps.google.com" className="flex-1 flex flex-col items-center py-2 text-xs font-semibold"><MapPin className="size-5" />Yol Tarifi</a>
         </div>
       </ReactLenis>
     </ThemeProvider>
